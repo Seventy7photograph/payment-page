@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>支付页面</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container payment-container">
+        <h1>支付确认</h1>
+        <div class="payment-info">
+            <p class="amount">支付金额：<span>¥5.00</span></p>
+            <p class="description">支付后即可访问科普内容</p>
+        </div>
+        <div class="payment-methods">
+            <h3>选择支付方式</h3>
+            <div class="method-item">
+                <input type="radio" id="wechat" name="payment" value="wechat" checked>
+                <label for="wechat">微信支付</label>
+            </div>
+            <div class="method-item">
+                <input type="radio" id="alipay" name="payment" value="alipay">
+                <label for="alipay">支付宝</label>
+            </div>
+        </div>
+        <button id="pay-btn" class="pay-button">立即支付</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
